@@ -49,6 +49,7 @@ print(final_restaurants_df)
 
 final_restaurants_df.to_csv('restaurants.csv', index=False)
 
+
 # Part 2: Extract the list of restaurants that have past event in the month of April 2019 and store the data as restaurant_events.csv
 # assuming we want the list of all events that happened in the month of April 2019. 
 restaurant_events = []
@@ -84,3 +85,24 @@ restaurant_events_df = pd.DataFrame(restaurant_events)
 print(restaurant_events_df)
 
 restaurant_events_df.to_csv('restaurant_events.csv', index=False)
+
+
+# Part 3: From the dataset (restaurant_data.json), determine the threshold for the different rating text based on aggregate rating. 
+ratings_list = []
+
+for restaurants in restaurant_data_df['restaurants']:
+    # print(restaurants)
+    for restaurant in restaurants:
+        restaurant = restaurant['restaurant']
+        # print(restaurant)
+        ratings_list.append({
+            'aggregate_rating': restaurant['user_rating']['aggregate_rating'],
+            'rating_text': restaurant['user_rating']['rating_text']
+        })
+
+ratings_df = pd.DataFrame(ratings_list)
+print(ratings_df)
+
+ratings_df = ratings_df[ratings_df['rating_text'].str.contains('Excellent|Very Good|Good|Average|Poor')]
+threshold = ratings_df.groupby('rating_text').agg({'aggregate_rating': ['min', 'max']})
+print(threshold)
