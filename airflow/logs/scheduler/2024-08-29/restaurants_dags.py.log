@@ -1,0 +1,109 @@
+[2024-08-29T14:01:29.240+0000] {processor.py:186} INFO - Started process (PID=71) to work on /opt/airflow/dags/restaurants_dags.py
+[2024-08-29T14:01:29.241+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/restaurants_dags.py for tasks to queue
+[2024-08-29T14:01:29.244+0000] {logging_mixin.py:190} INFO - [2024-08-29T14:01:29.244+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/restaurants_dags.py
+[2024-08-29T14:01:29.562+0000] {processor.py:925} INFO - DAG(s) 'restaurants_dag' retrieved from /opt/airflow/dags/restaurants_dags.py
+[2024-08-29T14:01:29.609+0000] {logging_mixin.py:190} INFO - [2024-08-29T14:01:29.608+0000] {override.py:1858} INFO - Created Permission View: can read on DAG:restaurants_dag
+[2024-08-29T14:01:29.613+0000] {logging_mixin.py:190} INFO - [2024-08-29T14:01:29.613+0000] {override.py:1858} INFO - Created Permission View: can delete on DAG:restaurants_dag
+[2024-08-29T14:01:29.617+0000] {logging_mixin.py:190} INFO - [2024-08-29T14:01:29.617+0000] {override.py:1858} INFO - Created Permission View: can edit on DAG:restaurants_dag
+[2024-08-29T14:01:29.617+0000] {logging_mixin.py:190} INFO - [2024-08-29T14:01:29.617+0000] {dag.py:3211} INFO - Sync 1 DAGs
+[2024-08-29T14:01:29.621+0000] {logging_mixin.py:190} INFO - [2024-08-29T14:01:29.621+0000] {dag.py:3234} INFO - Creating ORM DAG for restaurants_dag
+[2024-08-29T14:01:29.621+0000] {logging_mixin.py:190} INFO - [2024-08-29T14:01:29.621+0000] {dag.py:4138} INFO - Setting next_dagrun for restaurants_dag to None, run_after=None
+[2024-08-29T14:01:29.629+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/restaurants_dags.py took 0.395 seconds
+[2024-08-29T14:01:59.703+0000] {processor.py:186} INFO - Started process (PID=96) to work on /opt/airflow/dags/restaurants_dags.py
+[2024-08-29T14:01:59.704+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/restaurants_dags.py for tasks to queue
+[2024-08-29T14:01:59.704+0000] {logging_mixin.py:190} INFO - [2024-08-29T14:01:59.704+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/restaurants_dags.py
+[2024-08-29T14:01:59.885+0000] {processor.py:925} INFO - DAG(s) 'restaurants_dag' retrieved from /opt/airflow/dags/restaurants_dags.py
+[2024-08-29T14:01:59.891+0000] {logging_mixin.py:190} INFO - [2024-08-29T14:01:59.891+0000] {dag.py:3211} INFO - Sync 1 DAGs
+[2024-08-29T14:01:59.895+0000] {logging_mixin.py:190} INFO - [2024-08-29T14:01:59.895+0000] {dag.py:4138} INFO - Setting next_dagrun for restaurants_dag to None, run_after=None
+[2024-08-29T14:01:59.904+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/restaurants_dags.py took 0.203 seconds
+[2024-08-29T14:02:30.787+0000] {processor.py:186} INFO - Started process (PID=110) to work on /opt/airflow/dags/restaurants_dags.py
+[2024-08-29T14:02:30.788+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/restaurants_dags.py for tasks to queue
+[2024-08-29T14:02:30.791+0000] {logging_mixin.py:190} INFO - [2024-08-29T14:02:30.790+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/restaurants_dags.py
+[2024-08-29T14:02:31.056+0000] {processor.py:925} INFO - DAG(s) 'restaurants_dag' retrieved from /opt/airflow/dags/restaurants_dags.py
+[2024-08-29T14:02:31.063+0000] {logging_mixin.py:190} INFO - [2024-08-29T14:02:31.063+0000] {dag.py:3211} INFO - Sync 1 DAGs
+[2024-08-29T14:02:31.068+0000] {logging_mixin.py:190} INFO - [2024-08-29T14:02:31.068+0000] {dag.py:4138} INFO - Setting next_dagrun for restaurants_dag to None, run_after=None
+[2024-08-29T14:02:31.076+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/restaurants_dags.py took 0.299 seconds
+[2024-08-29T14:03:01.502+0000] {processor.py:186} INFO - Started process (PID=113) to work on /opt/airflow/dags/restaurants_dags.py
+[2024-08-29T14:03:01.503+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/restaurants_dags.py for tasks to queue
+[2024-08-29T14:03:01.507+0000] {logging_mixin.py:190} INFO - [2024-08-29T14:03:01.506+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/restaurants_dags.py
+[2024-08-29T14:03:01.733+0000] {processor.py:925} INFO - DAG(s) 'restaurants_dag' retrieved from /opt/airflow/dags/restaurants_dags.py
+[2024-08-29T14:03:01.740+0000] {logging_mixin.py:190} INFO - [2024-08-29T14:03:01.740+0000] {dag.py:3211} INFO - Sync 1 DAGs
+[2024-08-29T14:03:01.744+0000] {logging_mixin.py:190} INFO - [2024-08-29T14:03:01.744+0000] {dag.py:4138} INFO - Setting next_dagrun for restaurants_dag to None, run_after=None
+[2024-08-29T14:03:01.753+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/restaurants_dags.py took 0.257 seconds
+[2024-08-29T14:03:31.857+0000] {processor.py:186} INFO - Started process (PID=116) to work on /opt/airflow/dags/restaurants_dags.py
+[2024-08-29T14:03:31.859+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/restaurants_dags.py for tasks to queue
+[2024-08-29T14:03:31.861+0000] {logging_mixin.py:190} INFO - [2024-08-29T14:03:31.861+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/restaurants_dags.py
+[2024-08-29T14:03:32.162+0000] {processor.py:925} INFO - DAG(s) 'restaurants_dag' retrieved from /opt/airflow/dags/restaurants_dags.py
+[2024-08-29T14:03:32.170+0000] {logging_mixin.py:190} INFO - [2024-08-29T14:03:32.170+0000] {dag.py:3211} INFO - Sync 1 DAGs
+[2024-08-29T14:03:32.175+0000] {logging_mixin.py:190} INFO - [2024-08-29T14:03:32.175+0000] {dag.py:4138} INFO - Setting next_dagrun for restaurants_dag to None, run_after=None
+[2024-08-29T14:03:32.183+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/restaurants_dags.py took 0.333 seconds
+[2024-08-29T14:04:02.369+0000] {processor.py:186} INFO - Started process (PID=119) to work on /opt/airflow/dags/restaurants_dags.py
+[2024-08-29T14:04:02.370+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/restaurants_dags.py for tasks to queue
+[2024-08-29T14:04:02.372+0000] {logging_mixin.py:190} INFO - [2024-08-29T14:04:02.372+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/restaurants_dags.py
+[2024-08-29T14:04:02.746+0000] {processor.py:925} INFO - DAG(s) 'restaurants_dag' retrieved from /opt/airflow/dags/restaurants_dags.py
+[2024-08-29T14:04:02.755+0000] {logging_mixin.py:190} INFO - [2024-08-29T14:04:02.755+0000] {dag.py:3211} INFO - Sync 1 DAGs
+[2024-08-29T14:04:02.760+0000] {logging_mixin.py:190} INFO - [2024-08-29T14:04:02.760+0000] {dag.py:4138} INFO - Setting next_dagrun for restaurants_dag to None, run_after=None
+[2024-08-29T14:04:02.774+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/restaurants_dags.py took 0.408 seconds
+[2024-08-29T14:04:32.974+0000] {processor.py:186} INFO - Started process (PID=122) to work on /opt/airflow/dags/restaurants_dags.py
+[2024-08-29T14:04:32.975+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/restaurants_dags.py for tasks to queue
+[2024-08-29T14:04:32.977+0000] {logging_mixin.py:190} INFO - [2024-08-29T14:04:32.977+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/restaurants_dags.py
+[2024-08-29T14:04:33.241+0000] {processor.py:925} INFO - DAG(s) 'restaurants_dag' retrieved from /opt/airflow/dags/restaurants_dags.py
+[2024-08-29T14:04:33.248+0000] {logging_mixin.py:190} INFO - [2024-08-29T14:04:33.248+0000] {dag.py:3211} INFO - Sync 1 DAGs
+[2024-08-29T14:04:33.252+0000] {logging_mixin.py:190} INFO - [2024-08-29T14:04:33.252+0000] {dag.py:4138} INFO - Setting next_dagrun for restaurants_dag to None, run_after=None
+[2024-08-29T14:04:33.261+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/restaurants_dags.py took 0.295 seconds
+[2024-08-29T14:05:03.392+0000] {processor.py:186} INFO - Started process (PID=125) to work on /opt/airflow/dags/restaurants_dags.py
+[2024-08-29T14:05:03.394+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/restaurants_dags.py for tasks to queue
+[2024-08-29T14:05:03.399+0000] {logging_mixin.py:190} INFO - [2024-08-29T14:05:03.398+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/restaurants_dags.py
+[2024-08-29T14:05:03.656+0000] {processor.py:925} INFO - DAG(s) 'restaurants_dag' retrieved from /opt/airflow/dags/restaurants_dags.py
+[2024-08-29T14:05:03.662+0000] {logging_mixin.py:190} INFO - [2024-08-29T14:05:03.662+0000] {dag.py:3211} INFO - Sync 1 DAGs
+[2024-08-29T14:05:03.666+0000] {logging_mixin.py:190} INFO - [2024-08-29T14:05:03.666+0000] {dag.py:4138} INFO - Setting next_dagrun for restaurants_dag to None, run_after=None
+[2024-08-29T14:05:03.676+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/restaurants_dags.py took 0.302 seconds
+[2024-08-29T14:05:33.922+0000] {processor.py:186} INFO - Started process (PID=128) to work on /opt/airflow/dags/restaurants_dags.py
+[2024-08-29T14:05:33.924+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/restaurants_dags.py for tasks to queue
+[2024-08-29T14:05:33.929+0000] {logging_mixin.py:190} INFO - [2024-08-29T14:05:33.928+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/restaurants_dags.py
+[2024-08-29T14:05:34.212+0000] {processor.py:925} INFO - DAG(s) 'restaurants_dag' retrieved from /opt/airflow/dags/restaurants_dags.py
+[2024-08-29T14:05:34.220+0000] {logging_mixin.py:190} INFO - [2024-08-29T14:05:34.220+0000] {dag.py:3211} INFO - Sync 1 DAGs
+[2024-08-29T14:05:34.224+0000] {logging_mixin.py:190} INFO - [2024-08-29T14:05:34.224+0000] {dag.py:4138} INFO - Setting next_dagrun for restaurants_dag to None, run_after=None
+[2024-08-29T14:05:34.233+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/restaurants_dags.py took 0.322 seconds
+[2024-08-29T14:06:04.418+0000] {processor.py:186} INFO - Started process (PID=131) to work on /opt/airflow/dags/restaurants_dags.py
+[2024-08-29T14:06:04.419+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/restaurants_dags.py for tasks to queue
+[2024-08-29T14:06:04.421+0000] {logging_mixin.py:190} INFO - [2024-08-29T14:06:04.420+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/restaurants_dags.py
+[2024-08-29T14:06:04.623+0000] {processor.py:925} INFO - DAG(s) 'restaurants_dag' retrieved from /opt/airflow/dags/restaurants_dags.py
+[2024-08-29T14:06:04.629+0000] {logging_mixin.py:190} INFO - [2024-08-29T14:06:04.629+0000] {dag.py:3211} INFO - Sync 1 DAGs
+[2024-08-29T14:06:04.633+0000] {logging_mixin.py:190} INFO - [2024-08-29T14:06:04.633+0000] {dag.py:4138} INFO - Setting next_dagrun for restaurants_dag to None, run_after=None
+[2024-08-29T14:06:04.642+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/restaurants_dags.py took 0.229 seconds
+[2024-08-29T14:06:34.889+0000] {processor.py:186} INFO - Started process (PID=134) to work on /opt/airflow/dags/restaurants_dags.py
+[2024-08-29T14:06:34.890+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/restaurants_dags.py for tasks to queue
+[2024-08-29T14:06:34.894+0000] {logging_mixin.py:190} INFO - [2024-08-29T14:06:34.894+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/restaurants_dags.py
+[2024-08-29T14:06:35.186+0000] {processor.py:925} INFO - DAG(s) 'restaurants_dag' retrieved from /opt/airflow/dags/restaurants_dags.py
+[2024-08-29T14:06:35.194+0000] {logging_mixin.py:190} INFO - [2024-08-29T14:06:35.193+0000] {dag.py:3211} INFO - Sync 1 DAGs
+[2024-08-29T14:06:35.198+0000] {logging_mixin.py:190} INFO - [2024-08-29T14:06:35.198+0000] {dag.py:4138} INFO - Setting next_dagrun for restaurants_dag to None, run_after=None
+[2024-08-29T14:06:35.207+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/restaurants_dags.py took 0.328 seconds
+[2024-08-29T14:07:05.403+0000] {processor.py:186} INFO - Started process (PID=137) to work on /opt/airflow/dags/restaurants_dags.py
+[2024-08-29T14:07:05.404+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/restaurants_dags.py for tasks to queue
+[2024-08-29T14:07:05.405+0000] {logging_mixin.py:190} INFO - [2024-08-29T14:07:05.405+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/restaurants_dags.py
+[2024-08-29T14:07:05.603+0000] {processor.py:925} INFO - DAG(s) 'restaurants_dag' retrieved from /opt/airflow/dags/restaurants_dags.py
+[2024-08-29T14:07:05.609+0000] {logging_mixin.py:190} INFO - [2024-08-29T14:07:05.609+0000] {dag.py:3211} INFO - Sync 1 DAGs
+[2024-08-29T14:07:05.614+0000] {logging_mixin.py:190} INFO - [2024-08-29T14:07:05.613+0000] {dag.py:4138} INFO - Setting next_dagrun for restaurants_dag to None, run_after=None
+[2024-08-29T14:07:05.622+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/restaurants_dags.py took 0.225 seconds
+[2024-08-29T14:07:35.865+0000] {processor.py:186} INFO - Started process (PID=140) to work on /opt/airflow/dags/restaurants_dags.py
+[2024-08-29T14:07:35.866+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/restaurants_dags.py for tasks to queue
+[2024-08-29T14:07:35.869+0000] {logging_mixin.py:190} INFO - [2024-08-29T14:07:35.869+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/restaurants_dags.py
+[2024-08-29T14:07:36.174+0000] {processor.py:925} INFO - DAG(s) 'restaurants_dag' retrieved from /opt/airflow/dags/restaurants_dags.py
+[2024-08-29T14:07:36.184+0000] {logging_mixin.py:190} INFO - [2024-08-29T14:07:36.183+0000] {dag.py:3211} INFO - Sync 1 DAGs
+[2024-08-29T14:07:36.188+0000] {logging_mixin.py:190} INFO - [2024-08-29T14:07:36.188+0000] {dag.py:4138} INFO - Setting next_dagrun for restaurants_dag to None, run_after=None
+[2024-08-29T14:07:36.205+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/restaurants_dags.py took 0.376 seconds
+[2024-08-29T14:08:06.356+0000] {processor.py:186} INFO - Started process (PID=143) to work on /opt/airflow/dags/restaurants_dags.py
+[2024-08-29T14:08:06.357+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/restaurants_dags.py for tasks to queue
+[2024-08-29T14:08:06.359+0000] {logging_mixin.py:190} INFO - [2024-08-29T14:08:06.358+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/restaurants_dags.py
+[2024-08-29T14:08:06.568+0000] {processor.py:925} INFO - DAG(s) 'restaurants_dag' retrieved from /opt/airflow/dags/restaurants_dags.py
+[2024-08-29T14:08:06.575+0000] {logging_mixin.py:190} INFO - [2024-08-29T14:08:06.575+0000] {dag.py:3211} INFO - Sync 1 DAGs
+[2024-08-29T14:08:06.579+0000] {logging_mixin.py:190} INFO - [2024-08-29T14:08:06.579+0000] {dag.py:4138} INFO - Setting next_dagrun for restaurants_dag to None, run_after=None
+[2024-08-29T14:08:06.589+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/restaurants_dags.py took 0.238 seconds
+[2024-08-29T14:08:36.779+0000] {processor.py:186} INFO - Started process (PID=146) to work on /opt/airflow/dags/restaurants_dags.py
+[2024-08-29T14:08:36.781+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/restaurants_dags.py for tasks to queue
+[2024-08-29T14:08:36.785+0000] {logging_mixin.py:190} INFO - [2024-08-29T14:08:36.785+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/restaurants_dags.py
+[2024-08-29T14:08:37.087+0000] {processor.py:925} INFO - DAG(s) 'restaurants_dag' retrieved from /opt/airflow/dags/restaurants_dags.py
+[2024-08-29T14:08:37.095+0000] {logging_mixin.py:190} INFO - [2024-08-29T14:08:37.095+0000] {dag.py:3211} INFO - Sync 1 DAGs
+[2024-08-29T14:08:37.099+0000] {logging_mixin.py:190} INFO - [2024-08-29T14:08:37.099+0000] {dag.py:4138} INFO - Setting next_dagrun for restaurants_dag to None, run_after=None
+[2024-08-29T14:08:37.108+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/restaurants_dags.py took 0.340 seconds

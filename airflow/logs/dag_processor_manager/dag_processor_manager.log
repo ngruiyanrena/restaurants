@@ -1,0 +1,146 @@
+[2024-08-29T13:51:28.755+0000] {manager.py:483} INFO - Processing files using up to 1 processes at a time 
+[2024-08-29T13:51:28.756+0000] {manager.py:484} INFO - Process each file at most once every 30 seconds
+[2024-08-29T13:51:28.756+0000] {manager.py:485} INFO - Checking for new files in /opt/airflow/dags every 300 seconds
+[2024-08-29T13:51:28.757+0000] {manager.py:821} INFO - Searching for files in /opt/airflow/dags
+[2024-08-29T13:51:28.757+0000] {manager.py:824} INFO - There are 0 files in /opt/airflow/dags
+[2024-08-29T13:56:29.030+0000] {manager.py:821} INFO - Searching for files in /opt/airflow/dags
+[2024-08-29T13:56:29.033+0000] {manager.py:824} INFO - There are 0 files in /opt/airflow/dags
+[2024-08-29T14:01:29.182+0000] {manager.py:821} INFO - Searching for files in /opt/airflow/dags
+[2024-08-29T14:01:29.192+0000] {manager.py:824} INFO - There are 2 files in /opt/airflow/dags
+[2024-08-29T14:01:30.749+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                              PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+-------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/restaurants_dags.py                           1           0  0.42s           2024-08-29T14:01:29                      24
+/opt/airflow/dags/Country-Code.xlsx                             0           0  0.11s           2024-08-29T14:01:30                       3
+================================================================================
+[2024-08-29T14:02:02.130+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                              PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+-------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/restaurants_dags.py                           1           0  0.31s           2024-08-29T14:02:00                      10
+/opt/airflow/dags/Country-Code.xlsx                             0           0  0.10s           2024-08-29T14:02:02                       3
+================================================================================
+[2024-08-29T14:02:33.098+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                              PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+-------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/restaurants_dags.py                           1           0  0.31s           2024-08-29T14:02:31                      10
+/opt/airflow/dags/Country-Code.xlsx                             0           0  0.11s           2024-08-29T14:02:33                       3
+================================================================================
+[2024-08-29T14:03:03.390+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                              PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+-------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/restaurants_dags.py                           1           0  0.33s           2024-08-29T14:03:01                      10
+/opt/airflow/dags/Country-Code.xlsx                             0           0  0.11s           2024-08-29T14:03:03                       3
+================================================================================
+[2024-08-29T14:03:33.531+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                              PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+-------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/restaurants_dags.py                           1           0  0.41s           2024-08-29T14:03:32                      10
+/opt/airflow/dags/Country-Code.xlsx                             0           0  0.11s           2024-08-29T14:03:33                       3
+================================================================================
+[2024-08-29T14:04:04.050+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                              PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+-------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/restaurants_dags.py                           1           0  0.53s           2024-08-29T14:04:02                      10
+/opt/airflow/dags/Country-Code.xlsx                             0           0  0.11s           2024-08-29T14:04:04                       3
+================================================================================
+[2024-08-29T14:04:34.415+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                              PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+-------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/restaurants_dags.py                           1           0  0.32s           2024-08-29T14:04:33                      10
+/opt/airflow/dags/Country-Code.xlsx                             0           0  0.11s           2024-08-29T14:04:34                       3
+================================================================================
+[2024-08-29T14:05:04.869+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                              PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+-------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/restaurants_dags.py                           1           0  0.42s           2024-08-29T14:05:03                      10
+/opt/airflow/dags/Country-Code.xlsx                             0           0  0.11s           2024-08-29T14:05:04                       3
+================================================================================
+[2024-08-29T14:05:35.319+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                              PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+-------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/restaurants_dags.py                           1           0  0.43s           2024-08-29T14:05:34                      10
+/opt/airflow/dags/Country-Code.xlsx                             0           0  0.11s           2024-08-29T14:05:35                       3
+================================================================================
+[2024-08-29T14:06:05.705+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                              PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+-------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/restaurants_dags.py                           1           0  0.32s           2024-08-29T14:06:04                      10
+/opt/airflow/dags/Country-Code.xlsx                             0           0  0.11s           2024-08-29T14:06:05                       3
+================================================================================
+[2024-08-29T14:06:29.875+0000] {manager.py:821} INFO - Searching for files in /opt/airflow/dags
+[2024-08-29T14:06:29.888+0000] {manager.py:824} INFO - There are 2 files in /opt/airflow/dags
+[2024-08-29T14:06:36.100+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                              PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+-------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/restaurants_dags.py                           1           0  0.43s           2024-08-29T14:06:35                      10
+/opt/airflow/dags/Country-Code.xlsx                             0           0  0.11s           2024-08-29T14:06:36                       3
+================================================================================
+[2024-08-29T14:07:06.565+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                              PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+-------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/restaurants_dags.py                           1           0  0.31s           2024-08-29T14:07:05                      10
+/opt/airflow/dags/Country-Code.xlsx                             0           0  0.11s           2024-08-29T14:07:06                       3
+================================================================================
+[2024-08-29T14:07:37.027+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                              PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+-------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/restaurants_dags.py                           1           0  0.43s           2024-08-29T14:07:36                      10
+/opt/airflow/dags/Country-Code.xlsx                             0           0  0.11s           2024-08-29T14:07:37                       3
+================================================================================
+[2024-08-29T14:08:07.498+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                              PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+-------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/restaurants_dags.py                           1           0  0.33s           2024-08-29T14:08:06                      10
+/opt/airflow/dags/Country-Code.xlsx                             0           0  0.11s           2024-08-29T14:08:07                       3
+================================================================================
+[2024-08-29T14:08:37.969+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                              PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+-------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/restaurants_dags.py                           1           0  0.42s           2024-08-29T14:08:37                      10
+/opt/airflow/dags/Country-Code.xlsx                             0           0  0.11s           2024-08-29T14:08:37                       3
+================================================================================

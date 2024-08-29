@@ -1,0 +1,60 @@
+[2024-08-29T14:01:58.956+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2024-08-29T14:01:58.961+0000] {taskinstance.py:2603} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: restaurants_dag.restaurant_events manual__2024-08-29T14:01:54.821845+00:00 [queued]>
+[2024-08-29T14:01:58.963+0000] {taskinstance.py:2603} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: restaurants_dag.restaurant_events manual__2024-08-29T14:01:54.821845+00:00 [queued]>
+[2024-08-29T14:01:58.964+0000] {taskinstance.py:2856} INFO - Starting attempt 1 of 2
+[2024-08-29T14:01:58.970+0000] {taskinstance.py:2879} INFO - Executing <Task(PythonOperator): restaurant_events> on 2024-08-29 14:01:54.821845+00:00
+[2024-08-29T14:01:58.973+0000] {logging_mixin.py:190} WARNING - /home/airflow/.local/lib/python3.12/site-packages/airflow/task/task_runner/standard_task_runner.py:70 DeprecationWarning: This process (pid=85) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[2024-08-29T14:01:58.973+0000] {standard_task_runner.py:72} INFO - Started process 94 to run task
+[2024-08-29T14:01:58.973+0000] {standard_task_runner.py:104} INFO - Running: ['airflow', 'tasks', 'run', 'restaurants_dag', 'restaurant_events', 'manual__2024-08-29T14:01:54.821845+00:00', '--job-id', '4', '--raw', '--subdir', 'DAGS_FOLDER/restaurants_dags.py', '--cfg-path', '/tmp/tmpvkepdnfn']
+[2024-08-29T14:01:58.974+0000] {standard_task_runner.py:105} INFO - Job 4: Subtask restaurant_events
+[2024-08-29T14:01:58.989+0000] {task_command.py:467} INFO - Running <TaskInstance: restaurants_dag.restaurant_events manual__2024-08-29T14:01:54.821845+00:00 [running]> on host da79d01771c4
+[2024-08-29T14:01:59.010+0000] {taskinstance.py:3122} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='restaurants_dag' AIRFLOW_CTX_TASK_ID='restaurant_events' AIRFLOW_CTX_EXECUTION_DATE='2024-08-29T14:01:54.821845+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-08-29T14:01:54.821845+00:00'
+[2024-08-29T14:01:59.011+0000] {taskinstance.py:731} INFO - ::endgroup::
+[2024-08-29T14:01:59.412+0000] {logging_mixin.py:190} INFO - did not happen in april 2019: {'event_id': 331382, 'friendly_start_date': '05 May', 'friendly_end_date': '06 June', 'friendly_timing_str': 'Sunday, 5th May - Thursday, 6th June', 'start_date': '2019-05-05', 'end_date': '2019-06-06', 'end_time': '23:30:00', 'start_time': '17:00:00', 'is_active': 1, 'date_added': '2019-03-26 18:15:07', 'photos': [], 'restaurants': [], 'is_valid': 1, 'share_url': 'http://www.zoma.to/r/0', 'show_share_url': 0, 'title': 'Ramadan ', 'description': 'Dine in with us for the season of Ramadan.', 'display_time': '05:00 pm - 11:30 pm', 'display_date': '05 May - 06 June', 'is_end_time_set': 1, 'disclaimer': 'Restaurants are solely responsible for the service; availability and quality of the events including all or any cancellations/ modifications/ complaints.', 'event_category': 0, 'event_category_name': '', 'book_link': '', 'types': [{'name': 'Iftar', 'color': '#D39124'}], 'share_data': {'should_show': 0}}
+[2024-08-29T14:01:59.413+0000] {logging_mixin.py:190} INFO - did not happen in april 2019: {'event_id': 332697, 'friendly_start_date': '04 May', 'friendly_end_date': '04 June', 'friendly_timing_str': 'Saturday, 4th May - Tuesday, 4th June', 'start_date': '2019-05-04', 'end_date': '2019-06-04', 'end_time': '23:59:59', 'start_time': '17:45:25', 'is_active': 1, 'date_added': '2019-03-29 15:48:52', 'photos': [], 'restaurants': [], 'is_valid': 1, 'share_url': 'http://www.zoma.to/r/0', 'show_share_url': 0, 'title': 'Grand Iftar Buffet 2019', 'description': 'Grand Iftar Buffet 2019.  For reservations and enquires call 02-6332302', 'display_time': '05:45 pm onwards', 'display_date': '04 May - 04 June', 'is_end_time_set': 0, 'disclaimer': 'Restaurants are solely responsible for the service; availability and quality of the events including all or any cancellations/ modifications/ complaints.', 'event_category': 1, 'event_category_name': '', 'book_link': '', 'types': [{'name': 'Iftar', 'color': '#D39124'}], 'share_data': {'should_show': 0}}
+[2024-08-29T14:01:59.416+0000] {logging_mixin.py:190} INFO -      event_id restaurant_id                 restaurant_name  \
+0      322331      18649486            The Drunken Botanist   
+1      332812        308322                Hauz Khas Social   
+2      336644      18856789            AIR- An Ivory Region   
+3      336889      18382360                           Local   
+4      336888      18382360                           Local   
+..        ...           ...                             ...   
+177    305850       7001670  Eight - Cordis, Auckland Hotel   
+178    298162       7001670  Eight - Cordis, Auckland Hotel   
+179    329300      18981544                        Katsu YA   
+180    329301      18981544                        Katsu YA   
+181    335217      18680113            The Cutt Grill House   
+
+                                             photo_url  \
+0    https://b.zmtcdn.com/data/zomato_events/photos...   
+1    https://b.zmtcdn.com/data/zomato_events/photos...   
+2    https://b.zmtcdn.com/data/zomato_events/photos...   
+3                                                  N/A   
+4                                                  N/A   
+..                                                 ...   
+177  https://b.zmtcdn.com/data/zomato_events/photos...   
+178  https://b.zmtcdn.com/data/zomato_events/photos...   
+179  https://b.zmtcdn.com/data/zomato_events/photos...   
+180  https://b.zmtcdn.com/data/zomato_events/photos...   
+181  https://b.zmtcdn.com/data/zomato_events/photos...   
+
+                         event_title event_start_date event_end_date  
+0    BackToBasic Wednesdays !!\n\n\n       2019-03-06     2019-08-28  
+1        Live 20/20 Match Screenings       2019-03-29     2019-05-23  
+2                 Dhol Bhangra Night       2019-04-10     2019-04-11  
+3                 Cocktail Wednesday       2019-04-10     2019-04-10  
+4                 Cocktail Wednesday       2019-04-10     2019-04-10  
+..                               ...              ...            ...  
+177                  Smoky Thursdays       2019-03-01     2019-04-30  
+178               Chocolate Tuesdays       2019-04-05     2019-08-21  
+179              Review us on Zomato       2019-03-22     2019-04-30  
+180                    Opening Promo       2019-03-22     2019-04-30  
+181               Knowledge is power       2019-04-04     2019-06-01  
+
+[182 rows x 7 columns]
+[2024-08-29T14:01:59.420+0000] {python.py:240} INFO - Done. Returned value was: None
+[2024-08-29T14:01:59.422+0000] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2024-08-29T14:01:59.422+0000] {taskinstance.py:352} INFO - Marking task as SUCCESS. dag_id=restaurants_dag, task_id=restaurant_events, run_id=manual__2024-08-29T14:01:54.821845+00:00, execution_date=20240829T140154, start_date=20240829T140158, end_date=20240829T140159
+[2024-08-29T14:01:59.450+0000] {local_task_job_runner.py:261} INFO - Task exited with return code 0
+[2024-08-29T14:01:59.460+0000] {taskinstance.py:3891} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2024-08-29T14:01:59.461+0000] {local_task_job_runner.py:240} INFO - ::endgroup::

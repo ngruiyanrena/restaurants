@@ -1,27 +1,35 @@
 import pandas as pd
 from datetime import datetime
+from airflow import DAG
+from airflow.operators.python_operator import PythonOperator
 
 # display all columns
 pd.set_option('display.max_columns', None)
 
-# Read restaurant_data.json
-restaurant_data_url = 'https://raw.githubusercontent.com/Papagoat/brain-assessment/main/restaurant_data.json'
-restaurant_data_df = pd.read_json(restaurant_data_url)
-print(restaurant_data_df)
+# # Read restaurant_data.json
+# restaurant_data_url = 'https://raw.githubusercontent.com/Papagoat/brain-assessment/main/restaurant_data.json'
+# restaurant_data_df = pd.read_json(restaurant_data_url)
+# print(restaurant_data_df)
 
-filtered_df = restaurant_data_df[restaurant_data_df['results_shown'] != 20]
-print(len(filtered_df))
-print(filtered_df)
+# filtered_df = restaurant_data_df[restaurant_data_df['results_shown'] != 20]
+# print(len(filtered_df))
+# print(filtered_df)
 
-# Read country code excel file
-country_code_df = pd.read_excel('Country-Code.xlsx')
-country_code_df.rename(columns={"Country Code": "country_id", "Country": "country"}, inplace=True)
-print(country_code_df)
+# # Read country code excel file
+# country_code_df = pd.read_excel('Country-Code.xlsx')
+# country_code_df.rename(columns={"Country Code": "country_id", "Country": "country"}, inplace=True)
+# print(country_code_df)
 
 
 # Part 1: Extract and store data as restaurants.csv
 # restaurant_data_df has 79 rows. 14 of those rows have 0 'results_shown'. Hence, total number of restaurants in csv file should be (79-14)*20 = 1,300.
 def restaurants(): 
+    restaurant_data_url = 'https://raw.githubusercontent.com/Papagoat/brain-assessment/main/restaurant_data.json'
+    restaurant_data_df = pd.read_json(restaurant_data_url)
+
+    country_code_df = pd.read_excel('/opt/airflow/dags/Country-Code.xlsx')
+    country_code_df.rename(columns={"Country Code": "country_id", "Country": "country"}, inplace=True)
+
     restaurants_list = []
 
     for index, row in restaurant_data_df.iterrows():
@@ -48,12 +56,15 @@ def restaurants():
     final_restaurants_df = final_restaurants_df[['restaurant_id', 'restuarant_name', 'country', 'city', 'user_rating_votes', 'user_aggregate_rating', 'cuisines']]
     print(final_restaurants_df)
 
-    final_restaurants_df.to_csv('restaurants.csv', index=False)
+    final_restaurants_df.to_csv('/opt/airflow/dags/restaurants.csv', index=False)
 
 
 # Part 2: Extract the list of restaurants that have past event in the month of April 2019 and store the data as restaurant_events.csv
 # assuming we want the list of all events that happened in the month of April 2019. 
 def restaurant_events():
+    restaurant_data_url = 'https://raw.githubusercontent.com/Papagoat/brain-assessment/main/restaurant_data.json'
+    restaurant_data_df = pd.read_json(restaurant_data_url)
+
     restaurant_events = []
 
     for restaurants in restaurant_data_df['restaurants']:
@@ -86,11 +97,14 @@ def restaurant_events():
     restaurant_events_df = pd.DataFrame(restaurant_events)
     print(restaurant_events_df)
 
-    restaurant_events_df.to_csv('restaurant_events.csv', index=False)
+    restaurant_events_df.to_csv('/opt/airflow/dags/restaurant_events.csv', index=False)
 
 
 # Part 3: From the dataset (restaurant_data.json), determine the threshold for the different rating text based on aggregate rating. 
 def ratings_threshold():
+    restaurant_data_url = 'https://raw.githubusercontent.com/Papagoat/brain-assessment/main/restaurant_data.json'
+    restaurant_data_df = pd.read_json(restaurant_data_url)
+
     ratings_list = []
 
     for restaurants in restaurant_data_df['restaurants']:
@@ -109,3 +123,40 @@ def ratings_threshold():
     ratings_df = ratings_df[ratings_df['rating_text'].str.contains('Excellent|Very Good|Good|Average|Poor')]
     threshold = ratings_df.groupby('rating_text').agg({'aggregate_rating': ['min', 'max']})
     print(threshold)
+
+
+
+
+# define DAG
+default_args = {
+    'owner': 'airflow',
+    'retries': 1,
+}
+
+restaurants_dag = DAG(
+    'restaurants_dag',
+    default_args=default_args,
+    description='CC4 Data Engineer Internship Tech Test',
+    schedule_interval=None
+)
+
+run_restaurants = PythonOperator(
+    task_id='restaurants',
+    python_callable=restaurants,
+    dag=restaurants_dag
+)
+
+run_restaurant_events = PythonOperator(
+    task_id='restaurant_events',
+    python_callable=restaurant_events,
+    dag=restaurants_dag
+)
+
+run_ratings_threshold = PythonOperator(
+    task_id='ratings_threshold',
+    python_callable=ratings_threshold,
+    dag=restaurants_dag
+)
+
+# define dependencies 
+run_restaurants >> run_restaurant_events >> run_ratings_threshold
